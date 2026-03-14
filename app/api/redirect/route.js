@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 
 export async function GET() {
   return new Response("Custom error occurred", {
-    status: 500,
+    status: 200,
     headers: {
       "Content-Type": "text/plain"
     }
@@ -12,7 +12,7 @@ export async function GET() {
 
 export async function HEAD() {
   return new Response("Custom error occurred", {
-    status: 500,
+    status: 200,
     headers: {
       "Content-Type": "text/plain"
     }
